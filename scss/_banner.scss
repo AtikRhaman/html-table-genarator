@@ -1,7 +1,7 @@
 //banner
 .banner-content {
     background: $color-primary;
-    height: 400px;
+    height: 500px;
     position: relative;
 }
 
@@ -24,22 +24,12 @@
         color: $color-light-grey;
         font-weight: 900 !important;
         position: relative;
-        text-transform: uppercase;
-
-    }
-
-    &__title--bold-sec {
-        font-size: $banner-title;
-        color: $color-light-grey;
-        font-weight: 900 !important;
-        position: relative;
-        text-transform: uppercase;
 
     }
 
     &__text {
-        font-size: $regular-text;
-        margin: 20px 0;
+        font-size: $section-title;
+        margin: 2px 0 20px 0;
     }
 
     &__btn {
