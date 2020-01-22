@@ -1,0 +1,30 @@
+.table-container {
+    width: 100%;
+    background: $color-white;
+    overflow: scroll;
+    // box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    max-width: rem(1350px);
+    width: 96%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.textarea {
+    width: 100%;
+    display: none;
+}
+
+.table-container table {
+    margin: 30px 0;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px 4px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

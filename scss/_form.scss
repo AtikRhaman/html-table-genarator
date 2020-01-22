@@ -1,0 +1,54 @@
+.form-content {
+    position: absolute;
+    width: 100%;
+    background: $color-black;
+    top: -180px;
+    height: 500px;
+}
+
+.form {
+    background: $color-white;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 30px;
+
+    &__item {
+        display: flex;
+        width: 30%;
+        padding: 15px 30px;
+        margin: 0px 0;
+    }
+
+    &__item-btn {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 15px 30px;
+        margin: 0px 0;
+        width: 100%;
+
+        div {
+            margin: 0 6px;
+        }
+
+
+    }
+
+    &__item input,
+    select {
+        border: 2px solid $color-input-border;
+        padding: 14px 30px;
+        width: 80%;
+        border-radius: 3px;
+    }
+
+    &__item label {
+        padding: 14px 0px;
+        width: 100%;
+        border-radius: 3px;
+    }
+}
