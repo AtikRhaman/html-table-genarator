@@ -1,5 +1,5 @@
-.table-genarate {
-    margin-top: 200px;
+.table-genarate-wrap {
+    margin-top: 20%;
 }
 
 .table-container {
@@ -24,11 +24,5 @@
 
 td,
 th {
-    border: 1px solid #dddddd;
-    text-align: left;
     padding: 10px 4px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
 }

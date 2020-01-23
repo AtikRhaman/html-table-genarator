@@ -15,14 +15,22 @@ const table = document.querySelector('#genarate_table')
 const getCode = document.querySelector('#get_code')
 const btnGenerate = document.querySelector('#btn_genarate')
 const btnGetCode = document.querySelector('#btn_getcode')
+const formContent = document.querySelector('.form-content')
 
+// Copy function
+const copyFunction = (element) => {
+    let textArea = document.createElement("textarea");
+    textArea.value = element.textContent; //hexacode isthe  element which's content to be copied
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("Copy");
+    textArea.remove()
+}
 btnGetCode.addEventListener('click', function () {
     let myCode = table.innerHTML
     getCode.style.display = 'block'
     getCode.append(myCode)
-
 })
-
 // row genarato
 btnGenerate.addEventListener('click', function () {
     let userInputRows = inputRows.value
@@ -38,14 +46,15 @@ btnGenerate.addEventListener('click', function () {
     let userInputFontSize = inputFontSize.value
     let userInputTextAlign = inputTextAlign.value
     let userInputFontFamily = inputFontFamily.value
+    table.innerHTML = ''
 
-    const rowGenerator = () => {
+    const tableGenerator = () => {
         const thHeadGenarator = () => {
             for (let i = 0; i < userInputColumns; i++) {
                 let tHead = document.createElement('th')
-                tHead.textContent = 'td Head'
+                tHead.textContent = `Head ${i + 1}`
                 tHead.style.border = userinputBorderPx + 'px' + ' solid' + userInputBorderBgColor
-                tHead.style.background = userInputThBgColor
+                tHead.style.background = '#ccc' || userInputThBgColor
                 tHead.style.textAlign = userInputTextAlign
                 tHead.style.fontFamily = userInputFontFamily
                 table.appendChild(tHead)
@@ -75,7 +84,7 @@ btnGenerate.addEventListener('click', function () {
             columnsGenarator()
         }
     }
-    rowGenerator()
+    tableGenerator()
 
     let tdWidth = table.style.width = userInputTableWidth + '%'
     let tdFont = table.style.color = userInputFontColor
@@ -84,4 +93,18 @@ btnGenerate.addEventListener('click', function () {
     // let tdFontStyle = table.style.font-family = userInputFontColor
     let tdBg = table.style.background = userInputTdBgColor
     // let tdfontFamily = table.style.fontFamily = userInputFontFamily
+
+    const liveFunction = () => {
+        formContent.addEventListener('click', function () {
+            table.innerHTML = ""
+            tableGenerator()
+        })
+    }
+    liveFunction()
+
+    btnGetCode.addEventListener('click', function () {
+        let myCode = table.innerHTML
+        getCode.style.display = 'block'
+        getCode.append(myCode)
+    })
 })
