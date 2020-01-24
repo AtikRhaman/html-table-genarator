@@ -1,3 +1,2 @@
-# hexa-color-genarator
+# HTML-Table genarator
 
-https://atikrhaman.github.io/hexa-color-genarator-2/.
