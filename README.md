@@ -1,2 +1,2 @@
-# hexa-color-genarator
+# HTML-Table genarator
 
