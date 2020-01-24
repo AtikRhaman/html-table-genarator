@@ -20,7 +20,6 @@ const btnGetCode = document.querySelector('#btn_getcode')
 const btnCopy = document.querySelector('.btn_primary--copy')
 const tableWraper = document.querySelector('.table-genarate-wrap')
 const formContent = document.querySelector('.form-content')
-const borderColloups = document.querySelector('#border-colloups')
 const getHtmlCode = document.querySelector('.textarea').value
 
 // copy function
@@ -86,10 +85,7 @@ const myTable = () => {
     let tdWidth = table.style.width = userInputTableWidth + '%'
     let tdFont = table.style.color = userInputFontColor
     let tdFontSize = table.style.fontSize = userInputFontSize + 'px'
-    // let tdFontStyle = table.style.font-family = userInputFontColor
     let tdBg = table.style.background = userInputTdBgColor
-    // let tdfontFamily = table.style.fontFamily = userInputFontFamily
-    // let tdBorderColloups = table.style.border = userInputBorderColloups
     let tdFontWeight = table.style.fontWeight = userInputFontWeight
 }
 btnGenerate.addEventListener('click', function () {
