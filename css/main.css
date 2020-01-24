@@ -1,5 +1,16 @@
 .table-genarate-wrap {
-  margin-top: 20%; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 20%;
+  padding: 40px;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+  display: none; }
 
 .table-container {
   width: 100%;
@@ -12,6 +23,9 @@
 
 .textarea {
   width: 100%;
+  display: none; }
+
+#copy {
   display: none; }
 
 td,
@@ -190,31 +204,8 @@ th {
 .btn_primary {
   background: #790BB5; }
 
-.copy {
-  padding: 0px 20px;
-  height: 40px;
-  background: transparent;
-  color: #ffffff;
-  font-size: 22px;
-  border: none;
-  cursor: pointer;
-  border-radius: 3px;
-  text-align: center;
-  display: inline-block;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: -webkit-transform 0.35s ease-in-out;
-  transition: -webkit-transform 0.35s ease-in-out;
-  -o-transition: transform 0.35s ease-in-out;
-  transition: transform 0.35s ease-in-out;
-  transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out; }
-
-.copy:hover {
-  background: #ffffff;
-  color: #790BB5;
-  -webkit-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  transform: scale(1.03); }
+.btn_primary--copy {
+  background: #790BB5;
+  width: 224px; }
 
 

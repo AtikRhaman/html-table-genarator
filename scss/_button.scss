@@ -26,25 +26,7 @@
     background: $color-primary;
 }
 
-.copy {
-    padding: 0px 20px;
-    height: 40px;
-    background: transparent;
-
-    color: $color-white;
-    font-size: 22px;
-
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
-    text-align: center;
-    display: inline-block;
-    transform: scale(1);
-    transition: transform 0.35s ease-in-out;
-}
-
-.copy:hover {
-    background: $color-white;
-    color: $color-primary;
-    transform: scale(1.030);
+.btn_primary--copy {
+    background: $color-primary;
+    width: 224px;
 }
